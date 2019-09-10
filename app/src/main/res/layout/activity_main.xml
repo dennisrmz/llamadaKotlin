@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.llamada.MainActivity">
+
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/editText"
+            android:background="@drawable/button_border"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:textSize="50dp"
+    />
+
+    <com.example.llamada.MyKeyboard
+            android:id="@+id/keyboard"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" />
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorVerde"
+            tools:context=".MainActivity"
+            android:visibility="gone"
+            android:id="@+id/loadingContainer">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Llamando!"
+                android:textColor="@color/colorBlanco"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:textSize="40dp"
+        />
+
+        <Button
+                android:id="@+id/sendButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="330dp"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
